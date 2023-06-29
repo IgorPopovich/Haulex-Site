@@ -3,12 +3,13 @@
   "http.proxyStrictSSL": false,
   "name": "site",
   "version": "1.0.0",
+  "homepage": "https://IgorPopovich.github.io/Haulex-Site",
   "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "firebase deploy --only hosting",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss build -i src/main.css -o public/styles.css --watch"
+    "build": "parcel build public/*.html --public-url /Haulex-Site/"
   },
   "author": "",
   "license": "ISC",
